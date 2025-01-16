@@ -11,12 +11,12 @@ public class Prime{
             int n = scn.nextInt();
 
             int count = 0;
-            for(int div = 1;div <= n;div++){
+            for(int div = 2;div * div <= n;div++){
                 if(n % div == 0){
                     count++;
                 }
             }
-            if (count == 2) {
+            if (count == 0) {
                 System.out.println("Prime");
             }else{
                 System.out.println("Not prime");
